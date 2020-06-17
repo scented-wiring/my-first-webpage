@@ -5,15 +5,16 @@ hr {
 
 h1 {
     font-family: monospace;
-    font-size: 3.5em;
+    font-size: 4em;
     text-align: center;
     text-decoration: underline;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 h2 {
     font-family: monospace;
     text-align: center;
+    font-size: 2.5em;
 }
 
 body {
@@ -24,11 +25,16 @@ body {
     padding-bottom: 5px;
 }
 
+p {
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
 #wrap {
     background: yellow;
     margin: 0 auto;
     overflow: hidden;
-    width: 900px;
+    width: 60%;
     padding: 0 5% 5px 5%;
 }
 
@@ -59,12 +65,14 @@ footer {
 img {
     display: block;
     margin: 1% auto 1% auto;
+    max-width: 100%;
 }
 
 figure {
     font-family: monospace;
     font-style: italic;
     text-align: center;
+    font-size: 1.4em;
 }
 
 button {
@@ -86,6 +94,7 @@ button:hover {
 
 ul {
     display: table;
+    font-size: 1.2em;
     background-color: #ABEA0D;
     border: 3px solid black;
     border-radius: 10px;
@@ -95,9 +104,12 @@ ul {
 }
 
 iframe {
+    border: 4px dashed black;
+    padding: 5px 5px 5px 5px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
 }
 
 .feature {
@@ -128,4 +140,46 @@ iframe {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    img {
+        width: 50%;
+        height: 50%;
+    }
+
+    p {
+        font-size: 0.7em;
+        line-height: 1.4;
+    }
+
+    ul {
+        font-size: 0.7em;
+    }
+
+    button {
+        font-size: 0.7em;
+    }
+
+    figure {
+        font-size: 0.7em;
+    }
+
+    footer {
+        font-size: 0.5em;
+    }
+
+    iframe {
+        width: 100px;
+        height: 70px;
+    }
   }
