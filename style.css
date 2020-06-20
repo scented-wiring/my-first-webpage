@@ -1,11 +1,10 @@
 hr {
     border: 2px solid black;
-    border-radius: 3px;
 }
 
 h1 {
     font-family: monospace;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     text-decoration: underline;
     letter-spacing: 2px;
@@ -14,7 +13,20 @@ h1 {
 h2 {
     font-family: monospace;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: monospace;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+h4 {
+    font-family: monospace;
+    text-align: center;
+    font-size: 1.6em;
+    color: white;
 }
 
 body {
@@ -22,7 +34,6 @@ body {
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
-    padding-bottom: 5px;
 }
 
 p {
@@ -34,37 +45,22 @@ p {
     background: yellow;
     margin: 0 auto;
     overflow: hidden;
-    width: 60%;
-    padding: 0 5% 5px 5%;
+    width: 55%;
+    padding: 0 5% 1% 5%;
 }
+
 
 a {
     color: #007084;
 }
 
 a:hover {
-    color: #00E2C1;
-}
-
-footer a {
-    color: #F7F2CB;
-}
-
-footer {
-    font-size: 0.8em;
-    text-align: center;
-    position: fixed; 
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: black;
-    color: yellow;
-    padding: 2px 0 2px 0;
+    color: #00C3C0;
 }
 
 img {
     display: block;
-    margin: 1% auto 1% auto;
+    margin: 3% auto 3% auto;
     max-width: 100%;
 }
 
@@ -76,14 +72,13 @@ figure {
 }
 
 button {
-    font-size: 1.2em;
-    font-family: monospace;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 15px;
-    padding: 5px 8px 5px 8px;
-    background-color: #F7F2CB;
+    padding: 0.6em 0.6em 0.6em 0.6em;
+    background-color: white;
+    display: block;
+    margin: auto;
 }
 
 button:hover {
@@ -98,35 +93,167 @@ ul {
     background-color: #ABEA0D;
     border: 3px solid black;
     border-radius: 10px;
-    padding: 10px 20px 10px 30px;
+    padding: 0.5em 2em 0.5em 2em;
     box-shadow: 5px 5px gray;
-    margin: auto auto auto auto;
+    margin: 0 auto 0 auto;
+}
+
+nav ul {
+    box-shadow: none;
+    width: auto%;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 1em 0 1em;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: black;
 }
 
 iframe {
     border: 4px dashed black;
-    padding: 5px 5px 5px 5px;
+    padding: 0.3em 0.3em 0.3em 0.3em;
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
 }
 
+form {
+    margin: 1em 0 1em 0;
+}
+
+form li + li {
+    margin-top: 1em;
+  }
+
+form ul {
+    list-style: none;
+    font-size: 1em;
+    padding-top: 1em;
+}
+
+li + button {
+    margin-top: 1em;
+}
+
+button + button {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+input, 
+textarea {
+    font: 0.8em Arial, Helvetica, sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 1% 0 1% 0;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 0.6em;
+    margin-bottom: 1em;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    border: 3px solid black;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid black;
+    margin: auto;
+}
+
+.card header {
+    background-color: black;
+} 
+
+.content p {
+    font-size: 1.1em;
+    padding: 0 1em 0 1em;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+
+footer a {
+    color: white
+}
+
+table {
+    display: table;
+    font-size: 1.2em;
+    background-color: #ABEA0D;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 0.5em 0 0.5em 0;
+    box-shadow: 5px 5px gray;
+    margin: 0 auto 1em auto;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    padding: 0.5em 3em 0.5em 3em;
+}
+
+td {
+    padding-bottom: 0.5em;
+}
+
+
 .feature {
     border-radius: 50%;
-    background: #2F4858;
-    padding: 5px;
+    background: black;
+    padding: 4px;
 }
 
 .feature:hover {
-    filter: invert(1);
-    transition-duration: 0.5s;
+    filter: invert(100%);
+    transition-duration: 1s;
 }
 
 .shake:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
   }
+
+.center {
+    text-align: center;
+}
+
+.space {
+    padding: 0 0.3em 0 0.3em;
+}
   
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -144,12 +271,20 @@ iframe {
 
   @media (max-width: 480px) {
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
         letter-spacing: 2px;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 1em;
     }
 
     img {
@@ -162,8 +297,13 @@ iframe {
         line-height: 1.4;
     }
 
+    nav li {
+        padding: 0 0.2em 0 0.2em;
+    }
+
     ul {
-        font-size: 0.7em;
+        font-size: 0.6em;
+        border: 1.5px solid black;
     }
 
     button {
@@ -179,7 +319,73 @@ iframe {
     }
 
     iframe {
-        width: 100px;
-        height: 70px;
+        width: 9em;
+        height: 6em;
     }
-  }
+
+    label {
+        width: 50px;
+    }
+
+    input, 
+    textarea {
+        width: auto;
+    }
+
+    .feature {
+        padding: 2px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+    
+    .card {
+        grid-template-rows: max-content 100px 1fr;
+    }
+    
+    .content p {
+        font-size: 0.7em;
+    }
+    
+    footer {
+        font-size: 0.7em;
+    }
+    
+    table {
+        font-size: 0.5em;
+        padding: 0.3em 0 0.3em 0;
+    }
+
+    th {
+        padding: 0.5em 0.3em 0.5em 0.3em;
+    }
+
+    .center {
+        font-size: 0.9em;
+    }
+
+    form {
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    form li + li {
+        margin-top: 1em;
+      }
+    
+    form ul {
+        list-style: none;
+        font-size: 1em;
+    }
+
+    label {
+        font-size: 0.7em;
+        text-align: left;
+      }
+      
+    input, 
+    textarea {
+        width: 100px;
+    }

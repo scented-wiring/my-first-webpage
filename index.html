@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tom Hammersley - Home</title>
 </head>
-<body>
-    <h1>Hello World</h1>
-</body>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1>Tom Hammersley</h1>
+                <h2>Coder, musician, creative & fool.</h2>
+                <img src="green.jpg" alt="Tom Hammersley in a cloak and hat" width="200" height="200" class="feature"> 
+            </header>
+
+            <nav>
+                <ul>
+                    <li class="nav"><a href="index.html">Home</a></li>
+                    <li class="nav"><a href="aboutme.html">About Me</a></li>
+                    <li class="nav"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <article>
+
+                <h3>Home</h3>
+
+                <p id="hello" onclick="shelley()">Hello, I'm Tom Hammersley.</p>
+
+                <p>Having joined a Software Engineering course, I have set up this website as both an exercise to test my coding skills
+                    and as a portfolio for my past projects. I will continue to update the site and add easter eggs (click around to find them!)
+                    as I expand on my knowledge and complete more projects.
+                </p>
+
+                <div class="cards">
+                
+                <article class="card">
+                    
+                    <header>
+                        <h4>Graphic design Projects</h4>
+                    </header>
+
+                    <img src="card1.jpg" alt="">
+
+                    <div class="content">
+
+                        <p>Various flyers and album covers that I've designed with Photoshop.</p>
+
+                    </div>
+
+                    <footer><a href="https://github.com/scented-wiring/graphics" target="_blank">scented-wiring/graphics</a></footer>
+
+                </article>
+                
+                <article class="card">
+                    
+                    <header>
+                        <h4>Jack Simcock - Website</h4>
+                    </header>
+
+                    <img src="card2.jpg" alt="">
+
+                    <div class="content">
+
+                        <p>A website I designed using WordPress as a favour for a family friend.</p>
+
+                    </div>
+
+                    <footer><a href="https://www.jacksimcock.com" target="_blank">jacksimcock.com</a></footer>
+
+                </article>
+
+                <article class="card">
+                    
+                    <header>
+                        <h4>Rocketship Forest - Website</h4>
+                    </header>
+
+                    <img src="card3.jpg" alt="">
+
+                    <div class="content">
+
+                        <p>A website I created a few years ago as an exercise to learn HTML & CSS.</p>
+
+                    </div>
+
+                    <footer><a href="https://github.com/scented-wiring/firstwebsite-rf" target="_blank">scented-wiring/firstwebsite-rf</a></footer>
+
+                </article>
+
+            </article>
+
+         </div>
+           
+    </body>
+<script>
+
+    function shelley() {
+    document.getElementById("hello").innerHTML = "<a href='https://www.youtube.com/watch?v=QrVoJgQ7u8w' target='_blank'>Hello, I'm Shelley Duvall.</a>";
+    }
+    
+</script>
 </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Hammersley - Contact</title>
+</head>
+<body><div id="wrap">
+    <header>
+        <h1>Tom Hammersley</h1>
+        <h2>Coder, musician, creative & fool.</h2>
+        <img src="green.jpg" alt="Tom Hammersley in a cloak and hat" width="200" height="200" class="feature"> 
+    </header>
+
+    <nav>
+        <ul>
+            <li class="nav"><a href="index.html">Home</a></li>
+            <li class="nav"><a href="aboutme.html">About Me</a></li>
+            <li class="nav"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h3>Contact</h3>
+
+        <form id="myForm">
+
+            <ul>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_email">
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                    <button id ="get-content">Send message</button>
+                    <button id ="clear">Clear form</button>
+
+            </ul>
+
+        </form>
+
+    </article>
+
+</body>
+
+</div>
+
+<script>
+
+    document.getElementById("get-content").addEventListener('click', function()
+        {
+            var name = document.getElementById("name");
+            var email = document.getElementById('mail');
+            var message = document.getElementById('msg');
+        
+            alert(name.value + "\n" + email.value + "\n" + message.value);
+        });
+
+    document.getElementById("clear").addEventListener("click", function()
+        {
+            document.getElementById("myForm").reset();
+        });
+
+</script>
+</html>
